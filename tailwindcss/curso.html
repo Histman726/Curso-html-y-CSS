@@ -7,25 +7,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h1>Mi primera pagina con tailwind css</h1>
-    <button
-        class="lg:bg-blue-500 md:bg-red-900 sm:bg-orange-400 xl:bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-32">Button</button>
-    <div class="container mx-auto">
-        <h1 class="text-3xl text-center uppercase">Mi primera pagina con tailwind css</h1>
-        <button
-            class="lg:bg-blue-500 md:bg-red-900 sm:bg-orange-400 xl:bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
-        <div class="mt-5 border p-3">
-            <p class="text-base sm:text-xl xl:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis,
-                dolorum
-                est maxime
-                quis
-                minima
-                adipisci eos repudiandae distinctio iusto repellat? Hic commodi id corrupti sint labore eum
-                necessitatibus? Quos, recusandae.</p>
-        </div>
+<body class="container mx-auto mt-5 text-center">
+    <div class="grid grid-cols-3 gap-4 my-2">
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
     </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-2">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+    </div>
+    <div class="grid grid-cols-4 gap-4 my-2">
+        <div class="bg-green-400 font-bold col-span-2">B</div>
+        <div class="bg-green-400">A</div>
+        <div class="bg-green-400">A</div>
+        <div class="bg-green-400 col-span-full">C</div>
+    </div>
+    <div class="grid grid-cols-4 gap-4 mt-2">
+        <div class="bg-pink-400 col-start-4">B</div>
+        <div class=" bg-pink-400 col-end-3">A</div>
+        <div class="bg-pink-400">A</div>
+        <div class="bg-pink-400">C</div>
+    </div>
+    <div class="grid grid-flow-col auto-cols-max gap-3">
+        <div class="bg-violet-400">01</div>
+        <div class="bg-violet-400">02</div>
+        <div class="bg-violet-400">03</div>
+    </div>
+    <div class="grid grid-flow-row auto-rows-max">
+        <div class="bg-orange-400">01</div>
+        <div class="bg-orange-400">02</div>
+        <div class="bg-orange-400">03</div>
+    </div>
+
 </body>
 
 </html>
